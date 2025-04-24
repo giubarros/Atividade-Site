@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AKADEMIAFIT</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+      }
+
+      .topo {
+        background-color: #000;
+        color: #fff;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .topo img {
+        height: 100px;
+        margin-right: 15px;
+      }
+
+      .w3-bar {
+        display: flex;
+        background-color: #ff6a00;
+      }
+      .w3-bar-item {
+        padding: 16px 32px;
+        color: black;
+        text-decoration: none;
+      }
+      .w3-bar-item:hover {
+        background-color: #ff8c33;
+      }
+
+      .banner {
+        background-image: url("https://images.unsplash.com/photo-1556742031-5b3f3c79bb98");
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        color: black;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        text-shadow: 2px 2px 4px #fff;
+        text-align: center;
+        margin-bottom: 0;
+        padding-top: 100px;
+      }
+
+      h2 {
+        color: black;
+        font-size: 3em;
+        margin: 0;
+      }
+
+      .secoes {
+        padding: 50px 20px;
+        text-align: center;
+        background-color: #ff6a00;
+        margin: 20px 0;
+      }
+
+      .secoes h2 {
+        font-size: 2em;
+        background-color: black;
+        margin-bottom: 20px;
+        color: #ff6a00;
+      }
+
+      .secoes p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        background-color: #ff6a00;
+      }
+
+      .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 100%;
+      }
+
+      .galeria img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .precos {
+        margin: 0 auto;
+        width: 80%;
+      }
+
+      .w3-table-all {
+        margin: 0 auto;
+        width: 80%;
+      }
+
+      .rodape {
+        background-color: #333;
+        color: black;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .rodape a {
+        color: black;
+        text-decoration: none;
+        margin-right: 15px;
+      }
+
+      .rodape a:hover {
+        color: #ff6a00;
+      }
+
+      .cta {
+        background-color: #ff6a00;
+        padding: 20px;
+        text-align: center;
+        color: white;
+      }
+
+      .cta button {
+        background-color: #fff;
+        color: #ff6a00;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 15px;
+      }
+
+      .cta button:hover {
+        background-color: #ff8c33;
+      }
+
+      .contato input,
+      .contato textarea {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="topo">
+      <img src="logo.png" alt="Logo AKADEMIAFIT" />
+      <h1>AKADEMIAFIT</h1>
+    </div>
+
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button">Início</a>
+      <a href="#sobre" class="w3-bar-item w3-button">Sobre</a>
+      <a href="#planos" class="w3-bar-item w3-button">Planos</a>
+      <a href="#horarios" class="w3-bar-item w3-button">Horários</a>
+      <a href="#contato" class="w3-bar-item w3-button">Contato</a>
+    </div>
+
+    <div class="banner" style="background-image: url('imagem_fundo.png')">
+      <h2>
+        <strong>
+          Transforme seu corpo. Supere seus limites. <br />
+          A jornada começa aqui!
+        </strong>
+      </h2>
+    </div>
+
+    <div class="secoes" id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>
+        A AKADEMIAFIT oferece um ambiente moderno e acolhedor, com profissionais
+        qualificados e equipamentos de última geração. Nosso objetivo é
+        proporcionar a você uma experiência única, focada na superação de
+        limites e no alcance de seus objetivos fitness. Junte-se a nós e
+        transforme seu corpo e mente!
+      </p>
+    </div>
+
+    <div class="secoes" id="galeria">
+      <h2>Galeria</h2>
+      <div class="galeria">
+        <img src="cbum.png" alt="Treinando" />
+        <img src="peso.png" alt="Musculação" />
+        <img src="esteira.png" alt="Esteira" />
+        <img src="halter.png" alt="Peso de academia" />
+      </div>
+    </div>
+
+    <div class="secoes" id="planos">
+      <h2>Planos</h2>
+      <table class="w3-table-all w3-card-4 precos">
+        <tr class="w3-black">
+          <th>Plano</th>
+          <th>Preço</th>
+          <th>Duração</th>
+        </tr>
+        <tr>
+          <td>Mensal</td>
+          <td>R$ 99,90</td>
+          <td>30 dias</td>
+        </tr>
+        <tr>
+          <td>Trimestral</td>
+          <td>R$ 269,90</td>
+          <td>90 dias</td>
+        </tr>
+        <tr>
+          <td>Anual</td>
+          <td>R$ 899,90</td>
+          <td>12 meses</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="secoes" id="horarios">
+      <h2>Horários de Aulas</h2>
+      <table class="w3-table-all w3-card-4">
+        <tr class="w3-black">
+          <th>Dia</th>
+          <th>Aula</th>
+          <th>Horário</th>
+        </tr>
+        <tr>
+          <td>Segunda</td>
+          <td>Musculação</td>
+          <td>06:00 - 22:00</td>
+        </tr>
+        <tr>
+          <td>Terça</td>
+          <td>Crossfit</td>
+          <td>07:00 - 20:00</td>
+        </tr>
+        <tr>
+          <td>Quarta</td>
+          <td>Spinning</td>
+          <td>08:00 - 21:00</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="w3-container w3-padding-32" id="contato">
+      <h2>Contato</h2>
+      <form class="w3-container w3-card-4 contato" style="max-width: 500px">
+        <label>Nome:</label>
+        <input class="w3-input w3-border" type="text" required />
+        <label>Email:</label>
+        <input class="w3-input w3-border" type="email" required />
+        <label>Mensagem:</label>
+        <textarea class="w3-input w3-border" rows="4" required></textarea>
+        <button class="w3-button w3-orange w3-margin-top" type="submit">
+          Enviar
+        </button>
+      </form>
+    </div>
+
+    <div class="cta">
+      <h2>Transforme seu Corpo e Sua Vida!</h2>
+      <p>Junte-se à AKADEMIAFIT e alcance seus objetivos com a gente!</p>
+      <button>Inscreva-se Agora</button>
+    </div>
+
+    <div class="rodape">
+      <p>&copy; 2025 AKADEMIAFIT | Todos os direitos reservados</p>
+      <p>Siga-nos nas redes sociais:</p>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </body>
+</html>
